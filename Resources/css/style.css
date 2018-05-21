@@ -1,0 +1,145 @@
+.page-container {
+  width: 100%;
+  margin: 3em;
+}
+
+section {
+  margin-top: 1em;
+}
+
+.Q {
+  margin: 0 auto;
+  width: 40em;
+
+}
+
+.question-content {
+  display: flex;
+  max-height: 20em;
+}
+
+.funnypic {
+  width: 25em;
+}
+
+#hyenah {
+    background-image: url('../images/hyena.png');
+  background-size: cover;
+}
+
+#kite {
+    background-image: url('../images/Kite.jpg');
+  background-size: cover;
+}
+
+#braai {
+     background-image: url('../images/braai.jpg');
+  background-size: cover;
+}
+
+.question {
+  width: 100%;
+  padding: 2em 0;
+  text-align: center;
+
+}
+
+.question p {
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.answers {
+  width: 5em;
+  height:15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4em
+
+
+}
+
+.yes, .no {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 1em 0
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.answer-border-yes {
+  border: 0.5em solid grey;
+}
+
+.help {
+  background-color: yellow;
+}
+
+.help p{
+  padding: 0.2em;
+  text-align: center;
+}
+
+.submit-section {
+  display: flex;
+  width: 100%;
+}
+
+.submit {
+  padding: 1.3em;
+  width: 20em;
+  background-color: maroon;
+  display: inline-block;
+  margin: auto;
+}
+
+.submit-section a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+.secretpassword {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Correct-Message p {
+  font-size: 2em;
+  width:100%;
+  color: green;
+  position: block;
+  text-align: center;
+}
+
+#user-input {
+  width: 30em;
+  padding: 1em
+}
+
+.reveal {
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: red;
+  padding: 0 1em
+}
+
+.reveal p {
+  color: white;
+}
