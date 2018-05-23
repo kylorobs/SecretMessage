@@ -5,39 +5,52 @@ $(document).ready(function(){
     const $q1 = $(this).parent()
                        .attr('val');
 
-                       $(this).addClass('green')
-                              .attr('val','correct');
-                       $('.no').removeClass('red')
+                       $(this).addClass('green');
+
+                       $(this).next()
+                              .removeClass('red')
                               .attr('val', '');
 
     if ($q1 === 'Q1'){
-      $(this).hide();
+      $(this).attr('val','correct');
     }
     else if ($q1 === 'Q2'){
-      $(this).hide();
+      $(this).attr('val', '');
     }
     else if ($q1 === 'Q3'){
-      $(this).hide();
+      $(this).attr('val','correct');
     }
 
   });
 
 
+  $('.no').on('click', function(){
+    const $noAnswer = $(this).parent()
+                       .attr('val');
 
-    $('.no').on('click', function(){
-   $(this).addClass('red')
-          .attr('val','wrong');
-    $('.yes').removeClass('green')
-             .attr('val', '');
+                       $(this).addClass('red');
+
+                       $(this).prev()
+                              .removeClass('green')
+                              .attr('val', '');
+
+    if ($noAnswer === 'Q1'){
+      $(this).attr('val','');
+    }
+    else if ($noAnswer === 'Q2'){
+      $(this).attr('val', 'correct');
+    }
+    else if ($noAnswer === 'Q3'){
+      $(this).attr('val','');
+    }
 
   });
-
 
   // Help Errors
   $('.submit').on('click', function(){
-const $correctQ1 = $('#Q1 .answer .yes').attr('val');
-const $correctQ2 = $('#Q2 .answer .no').attr('val');
-const $correctQ3 =$('#Q3 .answer .yes').attr('val');
+const $correctQ1 = $('#Q1').children('.yes').attr('val');
+const $correctQ2 = $('#Q2').children('no').attr('val');
+const $correctQ3 =$('#Q3').children('yes').attr('val');
 
 const $wrongQ1 = $('#Q1 .answer .no').attr('val');
 const $wrongQ2 =$('#Q2 .answer .yes').attr('val');
