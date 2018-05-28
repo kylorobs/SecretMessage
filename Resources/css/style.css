@@ -1,15 +1,25 @@
 .page-container {
   width: 100%;
-  margin: 3em;
+  background-image:url('../images/cape-town.jpg');
+  background-size: cover;
 }
 
 section {
   margin-top: 1em;
 }
 
+.intro {
+  background-color: white;
+  padding: 2em 10em;
+  font-size:1.3em;
+  text-align: center;
+}
+
 .Q {
   margin: 0 auto;
   width: 40em;
+  border: 40px solid lightblue;
+  background-color: #ffffffc4;
 
 }
 
@@ -20,6 +30,7 @@ section {
 
 .funnypic {
   width: 25em;
+  margin-left: 1em;
 }
 
 #hyenah {
@@ -86,6 +97,9 @@ section {
 
 .help {
   background-color: yellow;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0.5em;
 }
 
 .help p{
@@ -101,7 +115,10 @@ section {
 .submit {
   padding: 1.3em;
   width: 20em;
-  background-color: maroon;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #c31c1c;
   display: inline-block;
   margin: auto;
 }
@@ -117,6 +134,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 1em;
 }
 
 .Correct-Message p {
@@ -136,10 +154,88 @@ section {
   height: auto;
   display: flex;
   align-items: center;
-  background-color: red;
-  padding: 0 1em
+  background-color: #c31c1c;
+  padding: 0 1em;
+
 }
 
 .reveal p {
   color: white;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+}
+
+.message-text {
+  width: 50%;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+.yes, .no, .submit, .reveal {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Q {
+      width: auto;
+      border: 20px solid lightblue;
+    }
+
+    .intro {
+      padding: 1.2em;
+    }
+
+    .answers {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    margin-left: 0; }
+
+    .funnypic {
+    width: auto;
+    margin-left: 0em;
+    height: 20em;
+}
+
+.question-content {
+    max-height: 30em;
+    flex-direction: column; }
+
+    .question p {
+    margin: auto;
+    font-size: 1.1em;
+  }
+
+    .yes, .no {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 1em 1em;
+}
+
+.help {
+  font-size: 1em;
+}
+
+.secretpassword {
+    width: auto;
+  }
+
+  .reveal p {
+    color: white;
+    text-align: center;
+  }
+
+.message-text {
+    width: auto;
+    padding: 1em;
+}
 }
