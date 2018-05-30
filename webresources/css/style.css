@@ -154,7 +154,8 @@ section {
 
 #user-input {
   width: 30em;
-  padding: 1em
+  padding: 1em;
+  font-size: 16px;
 }
 
 .reveal {
@@ -248,6 +249,10 @@ section {
 
 .secretpassword {
     width: auto;
+  }
+
+  #user-input {
+    font-size: 14px;
   }
 
   .reveal p {
