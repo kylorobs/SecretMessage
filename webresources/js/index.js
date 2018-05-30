@@ -69,28 +69,28 @@ const $wrongMsg = 'Incorrect! Check your answers.';
     $('.Correct-Message p').text($wrongMsg).css('color', 'red');
     $('#Q1Help').text('Of course we have hyenahs!').addClass('help');
       if ($wrongQ2 === 'wrong'){
-        $('#Q2Help').text('I am at a loss for words').addClass('help');
+        $('#Q2Help').text('I am at a loss for words.').addClass('help');
         if ($wrongQ3 === 'wrong'){
-          $('#Q3Help').text('Shocking! You should know this.').addClass('help');
+          $('#Q3Help').text('Shocking!').addClass('help');
       }
       }
         else if ($wrongQ3 === 'wrong'){
 
-          $('#Q3Help').text('Shocking! You should know this.').addClass('help');
+          $('#Q3Help').text('Shocking!').addClass('help');
       }
       }
 
     else if ($wrongQ2 === 'wrong'){
       $('.Correct-Message p').text($wrongMsg).css('color', 'red');
-      $('#Q2Help').text('I am at a loss for words').addClass('help');
+      $('#Q2Help').text('I am at a loss for words.').addClass('help');
       if ($wrongQ3 === 'wrong'){
-          $('#Q3Help').text('Shocking! You should know this.').addClass('help');
+          $('#Q3Help').text('Shocking!').addClass('help');
       }
     }
 
     else if ($wrongQ3 === 'wrong') {
       $('.Correct-Message p').text($wrongMsg).css('color', 'red');
-      $('#Q3Help').text('Shocking! You should know this.').addClass('help');
+      $('#Q3Help').text('Shocking!').addClass('help');
     }
 
     $('html, body').animate({
