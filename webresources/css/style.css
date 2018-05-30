@@ -178,7 +178,9 @@ section {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
+
+
+@media only screen and (max-width: 720px) {
 
     .Q {
       width: auto;
@@ -193,7 +195,8 @@ section {
     width: auto;
     height: auto;
     flex-direction: row;
-    margin-left: 0; }
+    margin-left: 0;
+  }
 
     .funnypic {
     width: auto;
@@ -203,7 +206,8 @@ section {
 
 .question-content {
     max-height: 30em;
-    flex-direction: column; }
+    flex-direction: column;
+  }
 
     .question p {
     margin: auto;
