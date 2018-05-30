@@ -1,3 +1,9 @@
+.html {
+  font-size: 12px;
+  line-height: 1.4;
+
+}
+
 .page-container {
   width: 100%;
   background-image:url('../images/cape-town.jpg');
@@ -19,7 +25,7 @@ section {
   margin: 0 auto;
   width: 40em;
   border: 40px solid lightblue;
-  background-color: #ffffffc4;
+  background-color: rgba(255,255,255, 0.7);
 
 }
 
