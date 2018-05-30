@@ -1,17 +1,18 @@
+
 html {
   font-size: 16px;
   line-height: 1.4;
+}
 
+
+section {
+  margin-top: 1em;
 }
 
 .page-container {
   width: 100%;
   background-image:url('../images/cape-town.jpg');
   background-size: cover;
-}
-
-section {
-  margin-top: 1em;
 }
 
 .intro {
