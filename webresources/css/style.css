@@ -1,6 +1,6 @@
 
 html {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
 }
 
@@ -185,9 +185,19 @@ section {
   cursor: pointer;
 }
 
+.submit:hover {
+  -webkit-filter: brightness(120%); /* Safari 6.0 - 9.0 */
+      filter: brightness(120%);
+}
+
+
 
 
 @media only screen and (max-width: 720px) {
+
+  html {
+    font-size: 16px;
+  }
 
     .Q {
       width: auto;
